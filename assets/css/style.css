@@ -1,0 +1,18 @@
+body {
+  text-align: center
+}
+
+.jumbotron {
+  max-height:300px;
+}
+
+h1 {
+  color: crimson
+}
+
+.crystal-image{
+
+width: 120px;
+max-height: 120px;
+
+}

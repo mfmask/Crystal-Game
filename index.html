@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+
+  <!--link rel="stylesheet" type="text/css" href="assets/css/reset.css"-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Crystal Value Challenge</title>
+
+</head> 
+
+<body>
+
+  <!-- I am beyond frstrated with my state of learning this material at this point. 
+  I get the process for CDNs and sequencing of those sources on an html page for css (above)and script links (below).
+  I am grasping bootstrap and it is one point of enlightenment that I feel good about. I already had a good grasp of html and css coming into the course, so it is easy to build on it with Bootstrap based on that. -->
+   
+  <div class="jumbotron">
+    <h1 class="display-5">Crystal Value Challenge!</h1>
+    <p class="lead">This is a simple random number "value" game.</p>
+    <hr class="my-1">
+
+    <p>Rules: Each game creates a random game number that is the "target".</p>
+    <p>Click a crystal image to discover its value.</p>
+    <p>Keep clicking each crystal to get to exact target value to win.</p>
+   
+  </div>
+  <div class="container">
+      <div class="crystal">
+    <div class="row">
+      <div class="col-sm-3">
+
+        <!-- I made each crystal a quarter of a grid row, placed images (rather popular images for his project no doubt as they are simple and have white backgrounds). I downloaded them for local reference instead of linking from source.-->
+        <img class="crystal-image" alt="crystal 1" src="assets/images/blue.jpeg">
+      </div>
+      <div class="col-sm-3">
+        <img class="crystal-image" alt="crystal 2" src="assets/images/gray.jpeg">
+      </div>
+      <div class="col-sm-3">
+        <img class="crystal-image" alt="crystal 3" src="assets/images/purple.jpeg">
+      </div>
+      <div class="col-sm-3">
+        <img class="crystal-image" alt="crystal 4" src="assets/images/blueish.jpeg">
+      </div>
+    </div>
+    </div>
+    <hr>
+    
+      <!-- I made a row for random number that is to be guessed...-->
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>Number to Guess: <span id="randomResult"></span></h4>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+      <!-- I made a row for counter for wins...-->
+        <h4>Wins: <span id="wins"></span></h4>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+
+      <!-- I made a row for counter for losses...-->
+        <h4>Losses: <span id="losses"></span></h4>
+
+        <!-- A temporary ID to check adding of crystal values-->
+        <p id="previous"></p>
+      </div>
+      <hr>
+    </div>
+
+  </div> <!--close container-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
